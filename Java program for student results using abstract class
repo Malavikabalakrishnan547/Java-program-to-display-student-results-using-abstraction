@@ -1,0 +1,41 @@
+abstract class Abstract {
+
+    public abstract int sumOfTwo(int n1);
+
+    public void disp() {
+        System.out.println("First semester results");
+        System.out.println("eng :100");
+        System.out.println("mal :90");
+        System.out.println("ec: 80");
+    }
+
+    public void disp2() {
+        System.out.println("Second semester results: ");
+        System.out.println("eng :100");
+        System.out.println("mat :75");
+        System.out.println("dc: 85");
+    }
+}
+
+class Demo extends Abstract {
+
+    public int sumOfTwo(int num1) {
+        return num1;
+    }
+
+    public static void main(String args[]) {
+        Abstract obj = new Demo();
+        obj.disp();
+
+        System.out.println("Sports credits:" + obj.sumOfTwo(30));
+
+    }
+}
+
+//OUTPUT OF THE CODE
+
+First semester results
+eng :100
+mal :90
+ec: 80
+Sports credits:30
